@@ -1,11 +1,12 @@
 package com.example.nicodelacruz.drunkentap;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
-import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
@@ -28,17 +29,17 @@ public class ResultActivity extends AppCompatActivity {
         bar.setRating(score);
         switch (score)
         {
-            case 0: t.setText("You scored 0%, keep learning");
+            case 0: t.setText("Obtuviste 0%, Estas muy borracho pide un Uber no te arriesgues");
                 break;
-            case 1: t.setText("You have 20%, study better");
+            case 1: t.setText("Obtuviste 20%, Estas borracho pide un Uber ");
                 break;
-            case 2: t.setText("You have 40%, keep learning");
+            case 2: t.setText("Obtuviste 40%, No estas muy Borracho, quieres pedir un Uber");
                 break;
-            case 3: t.setText("You have 60%, good attempt");
+            case 3: t.setText("Obtuviste 60%, Estas bien, sigue pisteando Bro ");
                 break;
-            case 4:t.setText("You have 80% Hmmmm.. maybe you have been reading a lot of AndroidProgramming quiz");
+            case 4:t.setText("Obtuviste 80% Chupale más");
                 break;
-            case 5:t.setText(" Whao, you have 100%, Who are you? An Android Jet brain");
+            case 5:t.setText("Impresionante obtuviste 100%, no estas ebrio campeón");
                 break;
         }
     }
@@ -53,11 +54,16 @@ public class ResultActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.action_settings) {
-            Intent settingsIntent = new Intent(this, MainActivity.class);
+            Intent settingsIntent = new Intent(this, QuizActivity.class);
             startActivity(settingsIntent);
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    public void Uber (View view){
+        Intent UberIntent = new Intent(Intent.ACTION_VIEW,Uri.parse("https://m.uber.com/ul/?client_id=<CLIENT_ID>"));
+        startActivity(UberIntent);
     }
 
 }

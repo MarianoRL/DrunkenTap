@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">DrunkenTap</string>
     <string name="hello_world">Hello world!</string>
-    <string name="menu_settings">Settings</string>
-    <string name="str_next">Next</string>
-    <string name="title_activity_result">Results!!!</string>
+    <string name="menu_settings">Ajustes</string>
+    <string name="str_next">Siguiente</string>
+    <string name="title_activity_result">Resultados</string>
 
-    <string name="settings_menu_item">Settings</string>
+    <string name="settings_menu_item">Ajustes</string>
 </resources>

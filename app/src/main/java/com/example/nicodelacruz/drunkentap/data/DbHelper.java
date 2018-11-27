@@ -23,7 +23,7 @@ import static com.example.nicodelacruz.drunkentap.data.QuizContract.MovieEntry.T
 public class DbHelper extends SQLiteOpenHelper {
     private static final int DATABASE_VERSION = 1;
     // Database Name
-    private static final String DATABASE_NAME = "triviaQuiz";
+    private static final String DATABASE_NAME = "DrunkenTap";
     // tasks table name
 
     private SQLiteDatabase dbase;
@@ -43,15 +43,15 @@ public class DbHelper extends SQLiteOpenHelper {
     }
     private void addQuestions()
     {
-        Question q1=new Question("If permissions are missing the application will get this at runtime","Parser", "SQLiteOpenHelper ", "Security Exception", "Security Exception");
+        Question q1=new Question("¿Cuál planeta es el mas chico?","Tierra", "Jupiter", "Venus", "Venus");
         this.addQuestion(q1);
-        Question q2=new Question("An open source standalone database", "SQLite", "BackupHelper", "NetworkInfo", "SQLite");
+        Question q2=new Question("¿Cuál es la capital de Rusia?", "Leningrad", "Moscow", "Saint Petersburg", "Moscow");
         this.addQuestion(q2);
-        Question q3=new Question("Sharing of data in Android is done via?","Wi-Fi radio", "Service Content Provider","Ducking", "Service Content Provider" );
+        Question q3=new Question("¿Es Washington, D.C. la capital de Estados Unidos?","No", "No lo se","Si", "Si" );
         this.addQuestion(q3);
-        Question q4=new Question("Main class through which your application can access location services on Android", "LocationManager", "AttributeSet", "SQLiteOpenHelper","LocationManager");
+        Question q4=new Question("¿Que linea es mas larga?", "_____", "______", "________","________");
         this.addQuestion(q4);
-        Question q5=new Question("Android is?","NetworkInfo","GooglePlay","Linux Based","Linux Based");
+        Question q5=new Question("¿Cual serie es la correcta?","10, 20, 30, 40, 50, 70, 80","2, 4, 6, 8, 10","1, 3, 5, 7, 9, 12, 15","2, 4, 6, 8, 10");
         this.addQuestion(q5);
     }
     @Override

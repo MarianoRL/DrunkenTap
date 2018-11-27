@@ -1,5 +1,6 @@
 package com.example.nicodelacruz.drunkentap;
 
+
 public class Question {
     private int ID;
     private String QUESTION;
