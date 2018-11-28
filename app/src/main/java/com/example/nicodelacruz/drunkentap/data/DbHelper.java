@@ -49,7 +49,7 @@ public class DbHelper extends SQLiteOpenHelper {
         this.addQuestion(q2);
         Question q3=new Question("¿Es Washington, D.C. la capital de Estados Unidos?","No", "No lo se","Si", "Si" );
         this.addQuestion(q3);
-        Question q4=new Question("¿Que linea es mas larga?", "_____", "______", "________","________");
+        Question q4=new Question("¿Cual linea es mas larga?", "_____", "______", "________","________");
         this.addQuestion(q4);
         Question q5=new Question("¿Cual serie es la correcta?","10, 20, 30, 40, 50, 70, 80","2, 4, 6, 8, 10","1, 3, 5, 7, 9, 12, 15","2, 4, 6, 8, 10");
         this.addQuestion(q5);

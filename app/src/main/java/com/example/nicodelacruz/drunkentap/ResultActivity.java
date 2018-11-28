@@ -29,11 +29,11 @@ public class ResultActivity extends AppCompatActivity {
         bar.setRating(score);
         switch (score)
         {
-            case 0: t.setText("Obtuviste 0%, Estas muy borracho pide un Uber no te arriesgues");
+            case 0: t.setText("Obtuviste 0%, Estas muy borracho pide un Uber no te arriesgues bro");
                 break;
-            case 1: t.setText("Obtuviste 20%, Estas borracho pide un Uber ");
+            case 1: t.setText("Obtuviste 20%, Estas borracho a casa campeón");
                 break;
-            case 2: t.setText("Obtuviste 40%, No estas muy Borracho, quieres pedir un Uber");
+            case 2: t.setText("Obtuviste 40%, No estas muy Borracho, quieres pedir un Uber?");
                 break;
             case 3: t.setText("Obtuviste 60%, Estas bien, sigue pisteando Bro ");
                 break;
